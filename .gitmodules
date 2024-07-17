@@ -1,0 +1,3 @@
+[submodule "native/udp-over-tcp"]
+	path = native/udp-over-tcp
+	url = https://github.com/Jolmberg/udp-over-tcp.git
