@@ -1,8 +1,11 @@
 REBAR3 ?= $(shell test -e `which rebar3` 2>/dev/null && which rebar3 || echo "./rebar3")
 
-.PHONY: deps test build
+.PHONY: deps test build update
 
-all: build
+all: update build
+
+update:
+	git submodule update --init
 
 build: $(REBAR3)
 	@$(REBAR3) compile
